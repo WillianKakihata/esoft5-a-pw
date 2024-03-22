@@ -27,6 +27,7 @@ main {
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
+
 }
 
 main > section {
@@ -40,7 +41,7 @@ main article {
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  width: 80vw;
 }
 
 section h1,
@@ -51,6 +52,7 @@ section h3 {
   flex-direction: column; 
   justify-content: center; 
   align-items: center; 
+  width: 80vw;
 }
 
 article h1,
