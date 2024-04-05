@@ -27,11 +27,9 @@ body {
 }
 
 main {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin: 0 20px;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main > section {
@@ -40,6 +38,7 @@ main > section {
 
 main section,
 main article {
+  width: 80vw;
   color: black;
   background-color: #fff;
   padding: 20px;
@@ -95,11 +94,8 @@ nav ul {
   background-color: #343a40;
   padding: 10px;
   margin-bottom: 20px;
-  transition-property: width;
 }
-nav{
-  transition-property: width, height;
-}
+
 nav a {
   text-decoration: none;
   color: #fff;
@@ -108,7 +104,6 @@ nav a {
 
 nav a:hover {
   color: #ffc107;
-  transition-delay: 0.2s;
 }
 
 /* Seções */
@@ -123,11 +118,6 @@ nav a:hover {
   width: 150px;
   height: 150px;
   align-self: center;
-  transition: transform 0.5s;
-}
-
-#info-squirtle img:hover{
-  transform: scale(1.1);
 }
 
 #info-squirtle img:nth-of-type(2) {
@@ -154,11 +144,6 @@ nav a:hover {
 #evolucao img {
   height: 150px;
   width: 150px;
-  transition: transform 0.5s;
-}
-
-#evolucao img:hover {
-  transform: scale(1.1);
 }
 
 #evolucao figcaption {
@@ -198,20 +183,17 @@ footer {
   align-items: center;
 }
 
-
 footer p {
   margin-bottom: 0;
 }
 
 footer a {
   text-decoration: none;
-  transition: opacity 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 footer a[href*='#'] {
   color: white;
-  
-  
 }
 
 footer a[href*='mailto'] {
@@ -223,41 +205,5 @@ footer a[href*='tel'] {
 }
 
 footer a[href]:hover {
-  opacity: 0.3;
-}
-
-/* recursos */
-#recursos {
-  transition: opacity 0.3s ease-in-out;
-}
-
-#recursos[href]:hover {
-  opacity: 0.1;
-}
-
-@media (max-width: 768px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  nav ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
-  #evolucao figcaption {
-    font-size: 16px;
-  }
-
-  header h1 {
-    font-size: 20px;
-  }
-
-  h2 {
-    font-size: 18px;
-  }
-
+  opacity: 0.8;
 }
