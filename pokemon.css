@@ -1,0 +1,10 @@
+main{
+    grid-template-columns: 1fr;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+h3{
+    margin: 0;
+}
